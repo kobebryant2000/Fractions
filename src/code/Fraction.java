@@ -42,17 +42,26 @@ public class Fraction {
     public static int gcf (int a, int b)
     {
         int min = Math.min(a,b);
-    }
-    private void simplify()
-    {
-        int min = Math.min(num,denom);
-        for (int i = min; i > 0; i--);
+        for (int i = min; i > 0; i--)
         {
-            if (num % i == 0 && denom % i == 0) {
-                num /= i;
-                denom /= i;
-                return;
+            if (a%i == 0 && b%i == 0) return i;
+        }
+        return 1;
+    }
+    private void simplify() {
+        int mult = Math.max(a, b);
+
+        while (mult % a != 0 || mult % b != 0)
+        {
+            mult += Math.max(a,b);
+        }
+            return mult;
+
+    }
+        {
+            int factor = gcf(num,denom);
+                num /= factor;
+                denom /= factor;
             }
         }
     }
-}

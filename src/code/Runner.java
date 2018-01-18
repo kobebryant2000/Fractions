@@ -10,18 +10,17 @@ public class Runner {
 
 
         {
-         /*   Fraction f1;
-            try
-            {
+            Fraction f1;
+            try {
                 Fraction f1 = new Fraction(3, 0);
-            }
-            catch (Exception e)
-            {
+            } catch (Exception e) {
                 System.out.println("Fractions need a non-zero denominator");
             }
-        }
-    }
-}*/
+
             Fraction myFraction = new Fraction(12, 4);
             System.out.println(myFraction);
+
+            System.out.println(Fraction)
         }
+    }
+}
